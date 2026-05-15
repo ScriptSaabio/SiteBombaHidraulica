@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="script.js" defer></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,9 +17,10 @@
             <a href="index.html"><img src="img/Windows.png" alt="Logo" class="logo"></a>
 
             <nav>
-                <a class="active" href="index.html">Home</a>
-                <a href="sobre.html">Sobre</a>
-                <a href="contatos.html">Contato</a>
+                <a class="menu" href="index.html">Home</a>
+                <a class="menu" href="sobre.html">Sobre</a>
+                <a class="menu" href="contatos.html">Contato</a>
+                <a class="login" href="login.html">Login</a>
             </nav>
         </div>
 
@@ -47,24 +49,24 @@
         <section class="produtos">
 
             <div class="card">
-                <img src="img/1.jpg" alt="Bomba 1">
+                <img class="imagem" src="img/1.jpg" alt="Bomba 1">
                 <h1>Alta Pressão</h1>
                 <p>Ideal para prédios e sistemas que exigem força total.</p>
                 <button class="botao" id="bomba1">Saiba Mais</button>
             </div>
 
             <div class="card">
-                <img src="img/2.jpg" alt="Bomba 2">
+                <img class="imagem" src="img/2.jpg" alt="Bomba 2">
                 <h1>Submersíveis</h1>
                 <p>Bombas projetadas para trabalhar dentro da água.</p>
-                <button class="botao" id="bomba1">Saiba Mais</button>
+                <button class="botao" id="bomba2">Saiba Mais</button>
             </div>
 
             <div class="card">
-                <img src="img/3.jpg" alt="Bomba 3">
+                <img class="imagem" src="img/3.jpg" alt="Bomba 3">
                 <h1>Manutenção</h1>
                 <p>Suporte técnico especializado para todos os modelos.</p>
-                <button class="botao" id="bomba1">Saiba Mais</button>
+                <button class="botao" id="bomba3">Saiba Mais</button>
             </div>
 
         </section>
@@ -85,6 +87,4 @@
     </footer>
 
 </body>
-<script src="script.js"></script>
-
 </html>
