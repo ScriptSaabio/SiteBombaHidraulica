@@ -206,8 +206,6 @@ const pesquisaProduto = document.querySelector("#pesquisaProduto");
 
 const btnPesquisar = document.querySelector("#btnPesquisar");
 
-const campoPesquisa = document.querySelector("#campoPesquisa");
-
 const resultadoPesquisa = document.querySelector("#resultadoPesquisa");
 
 /* MOSTRA PESQUISA */
@@ -224,8 +222,17 @@ btnMenu.addEventListener("click", () => {
 
 btnPesquisar.addEventListener("click", () => {
 
-    const valorPesquisa =
-        campoPesquisa.value.toLowerCase();
+    const campoPesquisa = document.querySelector("#campoPesquisa");
+
+    if (campoPesquisa.value.trim() === "") {
+
+        alert("Por favor, digite um termo para pesquisar.");
+
+        return;
+
+    }
+
+    const valorPesquisa = campoPesquisa.value.toLowerCase();
 
     resultadoPesquisa.innerHTML = "";
 
